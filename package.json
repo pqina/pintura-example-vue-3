@@ -1,7 +1,10 @@
 {
+  "private": true,
   "name": "pintura-example-vue-3",
   "version": "0.0.0",
-  "private": true,
+  "author": "Rik Schennink at PQINA",
+  "license": "https://pqina.nl/pintura/license/",
+  "homepage": "https://pqina.nl/pintura/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
