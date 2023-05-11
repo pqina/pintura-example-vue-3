@@ -1,4 +1,4 @@
-# Pintura Vue example project
+# Pintura Vue 3 example project
 
 Run `npm install` to install project dependencies, then run `npm start` to start the development server.
 
