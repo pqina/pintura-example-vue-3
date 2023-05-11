@@ -5,6 +5,7 @@
   "author": "Rik Schennink at PQINA",
   "license": "https://pqina.nl/pintura/license/",
   "homepage": "https://pqina.nl/pintura/",
+  "description": "A Pintura Vue 3 Example Project",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
