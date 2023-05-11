@@ -4,7 +4,7 @@ Run `npm install` to install project dependencies, then run `npm start` to start
 
 Navigate to http://localhost:8080 to view the project.
 
-Or try it out right now and [open the project on StackBlitz](https://stackblitz.com/github/pqina/pintura-example-vue)
+Or try it out right now and [open the project on StackBlitz](https://stackblitz.com/github/pqina/pintura-example-vue-3)
 
 ### License
 
