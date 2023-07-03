@@ -4,3 +4,21 @@
   padding: 2rem;
   font-weight: normal;
 }
+
+html {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+body {
+  padding: 2em;
+}
+
+img {
+  max-width: 100%;
+}

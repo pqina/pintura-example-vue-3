@@ -12,9 +12,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@pqina/filepond-plugin-image-editor": "^8.57.6",
-    "@pqina/pintura": "^8.57.6",
-    "@pqina/vue-pintura": "^8.57.6",
+    "@pqina/filepond-plugin-image-editor": "^9.0.2",
+    "@pqina/pintura": "^8.60.10",
+    "@pqina/vue-pintura": "^9.0.1",
     "filepond": "^4.30.4",
     "filepond-plugin-file-poster": "^2.5.1",
     "vue": "^3.2.47",
