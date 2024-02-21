@@ -7,6 +7,7 @@
   "homepage": "https://pqina.nl/pintura/",
   "description": "A Pintura Vue 3 Example Project",
   "scripts": {
+    "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
