@@ -13,6 +13,8 @@
     @pintura:show="handleShow()"
     @pintura:close="handleClose()"
     @pintura:load="handleLoad($event)"
+    @pintura:loaderror="handleLoadError($event)"
+    @pintura:loadabort="handleLoadAbort($event)"
     @pintura:process="handleProcess($event)"
   />
 
@@ -45,6 +47,15 @@ export default {
     },
     handleClose: function () {
       console.log("close");
+    },
+    handleLoadError: function (e) {
+      console.log("load error", e.detail);
+    },
+    handleLoadAbort: function (e) {
+      console.log("load abort", e.detail);
+
+      // hide modal
+      this.visible = false;
     },
   },
   data() {
