@@ -1,15 +1,18 @@
 <template>
   <h2>FilePond</h2>
 
-  <file-pond
-    ref="pond"
-    server="/api"
-    accepted-file-types="image/jpeg, image/png"
-    allow-multiple="true"
-    :imageEditor="myEditor"
-    :files="myFiles"
-    @:init="handleFilePondInit"
-  />
+  <form @:submit="handleSubmit">
+    <file-pond
+      ref="pond"
+      accepted-file-types="image/jpeg, image/png"
+      allow-multiple="true"
+      store-as-file="true"
+      :imageEditor="myEditor"
+      :files="myFiles"
+      @:init="handleFilePondInit"
+    />
+    <button type="submit">Submit</button>
+  </form>
 </template>
 <script>
 // Import Vue FilePond
@@ -73,6 +76,16 @@ export default {
     handleProcess: function (event) {
       console.log("process", event.detail);
       this.result = URL.createObjectURL(event.detail.dest);
+    },
+    handleSubmit: function (event) {
+      console.log("submit");
+      event.preventDefault();
+      const fd = new FormData(event.target);
+      for (const [name, file] of fd.entries()) {
+        const img = new Image();
+        img.src = URL.createObjectURL(file);
+        document.body.append(img);
+      }
     },
   },
   data() {
