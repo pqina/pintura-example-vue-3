@@ -2,17 +2,11 @@
   <h2>Example Video</h2>
 
   <p>
-    Please note that the video editor extension is only available on the PQINA
-    private npm and requires purchasing a license.
-  </p>
-
-  <p>
-    First set up the <code>.npmrc</code> file and add your private key, then run
-    <code>npm install @pqina/pintura-video</code>, and uncomment the
-    <a href="https://pqina.nl/pintura/docs/v8/api/video-editor/">
-      video extension
-    </a>
-    related code in the <code>ExampleVideo.vue</code> file.
+    Please note that the
+    <a href="https://pqina.nl/pintura/video-editor/"
+      >Pintura video editor extension</a
+    >
+    is not included in the core product package.
   </p>
 
   <div style="height: 70vh">
@@ -32,8 +26,6 @@
 import { PinturaEditor } from "@pqina/vue-pintura";
 import { getEditorDefaults } from "@pqina/pintura";
 
-/*
-
 // Import Pintura Video extension dependencies
 import {
   setPlugins,
@@ -52,8 +44,6 @@ import {
 
 // Load the Trim plugin view
 setPlugins(plugin_trim);
-
-*/
 
 // Import Pintura styles
 import "@pqina/pintura/pintura.css";
@@ -75,37 +65,34 @@ export default {
   data() {
     return {
       props: getEditorDefaults({
-        /*
-        util: 'trim',
+        util: "trim",
         locale: {
-            // Add the Trim plugin locale
-            ...plugin_trim_locale_en_gb,
+          // Add the Trim plugin locale
+          ...plugin_trim_locale_en_gb,
         },
         imageWriter: createDefaultMediaWriter(
-            // Generic Media Writer options, passed to image and video writer
-            {
+          // Generic Media Writer options, passed to image and video writer
+          {
             targetSize: {
-                width: 400,
+              width: 400,
             },
-            },
-            [
+          },
+          [
             // For handling images
             createDefaultImageWriter(),
 
             // For handling videos
             createDefaultVideoWriter({
-                // Video writer instructions here
-                // ...
+              // Video writer instructions here
+              // ...
 
-                // Encoder to use
-                encoder: createMediaStreamEncoder({
+              // Encoder to use
+              encoder: createMediaStreamEncoder({
                 imageStateToCanvas,
-                }),
+              }),
             }),
-            ]
-        )
-
-        */
+          ]
+        ),
       }),
       src: "video.mp4",
       result: undefined,

@@ -13,11 +13,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@pqina/filepond-plugin-image-editor": "^9.0.2",
-    "@pqina/pintura": "^8.60.10",
-    "@pqina/vue-pintura": "^9.0.1",
-    "filepond": "^4.30.4",
-    "filepond-plugin-file-poster": "^2.5.1",
+    "@pqina/filepond-plugin-image-editor": "^9.x",
+    "@pqina/pintura": "^8.x",
+    "@pqina/pintura-video": "^1.x",
+    "@pqina/vue-pintura": "^9.x",
+    "filepond": "^4.x",
+    "filepond-plugin-file-poster": "^2.x",
     "vue": "^3.2.47",
     "vue-filepond": "^7.0.3"
   },
